@@ -37,33 +37,46 @@ body {
 .card {
     transition: var(--transition);
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
 }
 
 .card-img-top {
-    transition: var(--transition);
+    transition: transform 0.5s ease;
 }
 
 .card:hover .card-img-top {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
-.card-title {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
+/* Cart Badge Animation */
+@keyframes bump {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.bump {
+    animation: bump 0.3s ease-out;
 }
 
 /* Button Customization */
 .btn-dark {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 600;
-    padding: 0.6rem 1.2rem;
+    padding: 0.7rem 1.4rem;
+    transition: var(--transition);
+}
+
+.btn-dark:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .btn-primary {

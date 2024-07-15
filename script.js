@@ -18,18 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if (cartBadge) {
                 cartBadge.textContent = cartCount;
                 
-                // Add a little animation effect
-                cartBadge.classList.add('bg-primary');
-                cartBadge.classList.remove('bg-danger');
-                
-                setTimeout(() => {
-                    cartBadge.classList.add('bg-danger');
-                    cartBadge.classList.remove('bg-primary');
-                }, 500);
+                // Add a visual "bump" animation
+                cartBadge.classList.remove('bump');
+                void cartBadge.offsetWidth; // Trigger reflow
+                cartBadge.classList.add('bump');
             }
 
-            // Optional: Show a confirmation toast or alert
-            console.log('Item added to cart!');
+            // Visual feedback on the button
+            const originalText = button.textContent;
+            button.textContent = 'Added!';
+            button.classList.replace('btn-dark', 'btn-success');
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.classList.replace('btn-success', 'btn-dark');
+            }, 1000);
         });
     });
 
