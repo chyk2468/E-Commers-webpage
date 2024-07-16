@@ -42,85 +42,18 @@
         </div>
     </header>
     <main id="shop" class="container my-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://picsum.photos/seed/p1/600/400" class="card-img-top rounded-0" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Minimalist Watch</h5>
-                        <p class="card-text text-muted small">Elegant and functional timepiece with a premium leather strap.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fs-5 fw-bold">$129.00</span>
-                            <button type="button" class="btn btn-dark btn-sm rounded-0 px-3">Add to Cart</button>
-                        </div>
-                    </div>
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <div class="btn-group filter-group" role="group" aria-label="Product filters">
+                    <button type="button" class="btn btn-outline-dark active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-dark" data-filter="electronics">Electronics</button>
+                    <button type="button" class="btn btn-outline-dark" data-filter="accessories">Accessories</button>
+                    <button type="button" class="btn btn-outline-dark" data-filter="fashion">Fashion</button>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://picsum.photos/seed/p2/600/400" class="card-img-top rounded-0" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Noise-Canceling Headphones</h5>
-                        <p class="card-text text-muted small">Immersive sound experience with adaptive noise cancellation technology.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fs-5 fw-bold">$249.00</span>
-                            <button type="button" class="btn btn-dark btn-sm rounded-0 px-3">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://picsum.photos/seed/p3/600/400" class="card-img-top rounded-0" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Smart Home Assistant</h5>
-                        <p class="card-text text-muted small">Connect and control your entire home with your voice and smart gestures.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fs-5 fw-bold">$199.00</span>
-                            <button type="button" class="btn btn-dark btn-sm rounded-0 px-3">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://picsum.photos/seed/p4/600/400" class="card-img-top rounded-0" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Executive Messenger Bag</h5>
-                        <p class="card-text text-muted small">Spacious and professional leather bag with dedicated laptop sleeve.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fs-5 fw-bold">$159.00</span>
-                            <button type="button" class="btn btn-dark btn-sm rounded-0 px-3">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://picsum.photos/seed/p5/600/400" class="card-img-top rounded-0" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Wireless Charging Stand</h5>
-                        <p class="card-text text-muted small">Fast charging for all your devices with a sleek wooden finish.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fs-5 fw-bold">$49.00</span>
-                            <button type="button" class="btn btn-dark btn-sm rounded-0 px-3">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://picsum.photos/seed/p6/600/400" class="card-img-top rounded-0" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Compact Mechanical Keyboard</h5>
-                        <p class="card-text text-muted small">Satisfying tactile feedback and customizable RGB backlighting.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fs-5 fw-bold">$109.00</span>
-                            <button type="button" class="btn btn-dark btn-sm rounded-0 px-3">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div id="product-grid" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Products will be dynamically injected here -->
         </div>
     </main>
     <footer class="bg-dark text-light py-5 mt-5">

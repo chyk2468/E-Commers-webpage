@@ -33,6 +33,30 @@ body {
     margin: 0 0.5rem;
 }
 
+/* Product Card Animation */
+.product-card-wrapper {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Filter Buttons Styling */
+.filter-group .btn {
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.filter-group .btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 /* Card Styling */
 .card {
     transition: var(--transition);
