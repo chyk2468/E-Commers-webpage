@@ -1,57 +1,43 @@
 # STORE. E-commerce Store
 
-A modern, responsive e-commerce storefront built with React, TypeScript, and Bootstrap.
+A responsive storefront built with React and TypeScript. Product cards are rendered from typed data, category filters narrow the catalogue, and cart interactions update the UI.
+
+**Stack:** React, TypeScript, Vite, Bootstrap, CSS
+
+![STORE. e-commerce workflow](docs/readme-architecture.svg)
 
 ## Features
 
-- Dynamic Product Catalog: Products are rendered from a data-driven array.
-- Category Filtering: Filter products by categories like Electronics, Fashion, and Accessories.
-- Interactive Shopping Cart: Real-time cart count updates with visual feedback.
-- Responsive Design: Fully optimized for desktop, tablet, and mobile devices.
-- Smooth Navigation: Integrated smooth scrolling for a seamless user experience.
+- Product catalogue driven by `src/data/products.ts`
+- Category filtering for electronics, fashion, and accessories
+- Interactive cart count
+- Responsive layout and product-card transitions
 
-## Technologies Used
+## Run locally
 
-- React 18
-- TypeScript
-- Vite (Build Tool)
-- Bootstrap 5 (Styling)
-- CSS3 (Custom Animations)
+Prerequisites: Node.js 18+ and npm.
 
-## Getting Started
+```bash
+git clone https://github.com/chyk2468/E-Commers-webpage.git
+cd E-Commers-webpage
+npm install
+npm run dev
+```
 
-### Prerequisites
+Useful scripts:
 
-- Node.js (v18.0.0 or higher)
-- npm (v9.0.0 or higher)
+- `npm run dev`: development server
+- `npm run build`: production build
+- `npm run preview`: preview the build
+- `npm run lint`: lint source files
 
-### Installation
+## Structure
 
-1. Clone the repository:
-   git clone [repository-url]
+- `src/App.tsx`: main storefront behavior
+- `src/data/products.ts`: product list and TypeScript type
+- `src/App.css` and `src/index.css`: styling and theme
+- `public/`: static assets
 
-2. Navigate to the project directory:
-   cd e-commers-webpage
+## Scope
 
-3. Install dependencies:
-   npm install
-
-### Available Scripts
-
-In the project directory, you can run:
-
-- `npm run dev`: Runs the app in development mode.
-- `npm run build`: Builds the app for production to the `dist` folder.
-- `npm run preview`: Locally previews the production build.
-- `npm run lint`: Runs ESLint to check for code quality issues.
-
-## Project Structure
-
-- `src/App.tsx`: Main application component containing core logic.
-- `src/App.css`: Custom styles and animations.
-- `src/data/products.ts`: Product database and TypeScript interfaces.
-- `public/`: Static assets and images.
-
-## License
-
-This project is open source and available under the MIT License.
+This repository currently documents a client-side shopping interface. Do not assume product persistence, account management, payment processing, or order fulfilment unless those are separately implemented.
