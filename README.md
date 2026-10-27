@@ -1,43 +1,72 @@
-# STORE. E-commerce Store
+# E-Commerce Webpage
 
-A responsive storefront built with React and TypeScript. Product cards are rendered from typed data, category filters narrow the catalogue, and cart interactions update the UI.
+**A storefront interface for browsing products and shopping actions.**
 
-**Stack:** React, TypeScript, Vite, Bootstrap, CSS
+[![GitHub](https://img.shields.io/badge/GitHub-Source-24292f?logo=github)](https://github.com/chyk2468/E-Commers-webpage)
 
-![STORE. e-commerce workflow](docs/readme-architecture.svg)
+## 1. Project Title & Tagline
 
-## Features
+A storefront interface for browsing products and shopping actions.
 
-- Product catalogue driven by `src/data/products.ts`
-- Category filtering for electronics, fashion, and accessories
-- Interactive cart count
-- Responsive layout and product-card transitions
+## 2. Problem Statement
 
-## Run locally
+An online storefront needs a clear path from product discovery to cart actions. This project demonstrates the front-end pieces of that shopping experience.
 
-Prerequisites: Node.js 18+ and npm.
+## 3. Project Preview
+
+Add a real screenshot, GIF, or public demo showing the current implementation.
+
+[Open interactive architecture](architecture.html)
+
+## 4. Overview
+
+This repository is organised around a small sequence of input, processing, and output stages. Use the code and configuration files to verify which stages are currently implemented.
+
+## 5. Key Features
+
+- Browse product listings.
+- Inspect product information.
+- Use the shopping interface and cart interactions where implemented.
+- Navigate a responsive storefront layout.
+
+## 6. Architecture / Workflow
+
+![Animated E-Commerce Webpage workflow](docs/animated-workflow.svg)
+
+Open the [interactive architecture explorer](architecture.html) to select a stage and inspect its role.
+
+## 7. Tech Stack
+
+See the repository package and source files for the exact frontend framework and dependencies.
+
+## 8. Installation & Setup
 
 ```bash
 git clone https://github.com/chyk2468/E-Commers-webpage.git
 cd E-Commers-webpage
-npm install
-npm run dev
 ```
 
-Useful scripts:
+Install dependencies if a package manifest is present, then run the documented development command.
 
-- `npm run dev`: development server
-- `npm run build`: production build
-- `npm run preview`: preview the build
-- `npm run lint`: lint source files
+## 9. Usage
 
-## Structure
+Start the frontend, browse the product cards, and test each shopping interaction. Treat payment, authentication, and order submission as unavailable unless backed by implemented services.
 
-- `src/App.tsx`: main storefront behavior
-- `src/data/products.ts`: product list and TypeScript type
-- `src/App.css` and `src/index.css`: styling and theme
-- `public/`: static assets
+## 10. Project Structure
 
-## Scope
+Start with the main HTML or application entry point, then inspect product components, styles, assets, and cart logic.
 
-This repository currently documents a client-side shopping interface. Do not assume product persistence, account management, payment processing, or order fulfilment unless those are separately implemented.
+## 11. Results & Demo
+
+Add a screenshot of the product grid and cart state, and link a live demo if deployed.
+
+## 12. Future Enhancements
+
+- Add accessible product filtering and sorting.
+- Persist cart state across reloads.
+- Connect a secure backend for inventory and orders if needed.
+- Add responsive and interaction tests.
+
+## 13. License
+
+Check the repository and asset licences before reusing the storefront code or images.
